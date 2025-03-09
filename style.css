@@ -1,0 +1,125 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1e90ff;
+}
+
+/* Sections */
+section {
+    padding: 100px 20px;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.highlight {
+    color: #1e90ff;
+}
+
+.btn {
+    background-color: #1e90ff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #007acc;
+}
+
+/* Project Section */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project:hover {
+    background-color: #ddd;
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list span {
+    background-color: #444;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.social-links i {
+    font-size: 24px;
+    margin: 10px;
+    color: #1e90ff;
+    transition: color 0.3s;
+}
+
+.social-links i:hover {
+    color: #007acc;
+}
